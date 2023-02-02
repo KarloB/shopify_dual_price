@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         var numb = priceElements[i].innerHTML.match(/\d/g);;
         if (numb != undefined) {
             numb = numb.join("");
-            let eur = numb / 100 / conversionRate;
-            let formatted = (numb / 100).toFixed(2) + 'kn / ' + eur.toFixed(2) + 'EUR'
+            let hrk = numb / 100 * conversionRate;
+            let formatted = (numb / 100).toFixed(2) + 'EUR / ' + hrk.toFixed(2) + 'kn'
             priceElements[i].innerHTML = formatted;
         }
     };
