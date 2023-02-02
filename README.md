@@ -10,4 +10,4 @@ Prikaz cijene artikla u kunama i eurima
 - Create a blank file:
         - Extension: js.liquid
         - File name: dual_price.js
-- U theme.liquid, nakon body taga dodati: {{ 'dual_price_jq.js' | asset_url | script_tag }}
+- U theme.liquid, nakon body taga dodati: {{ 'dual_price.js' | asset_url | script_tag }}
